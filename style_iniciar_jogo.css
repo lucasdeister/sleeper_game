@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans';
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+	'header header header header header header'
+	'main main main main main'
+	'footer footer footer footer footer footer';
+}
+
+.cabecalho{
+    padding-top: 15px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(42, 41, 41);
+    border-bottom: solid steelblue 4px;
+    margin-bottom: 10px;
+}
+
+
+.container-rodape{
+    font-size: 17px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: black;
+    background-color: steelblue;
+}
+
+
+.icones{
+    margin-left: 5px;
+    color: black;
+}
+
+.insta{
+    font-size: 25px;
+}
+
+.email{
+    font-size: 30px;
+}
+
+hr{
+    margin: 1em 0;
+    border: solid lightgray 2px;
+    background-color: lightgray;
+    margin-top: 15px;
+}
+
+.grid-container main{
+  text-align: center;
+}
+
+.green{color: green;}
+.yellow{color: yellow;}
+.brown{color: brown;}
+.pink{color: pink;}
+.orange{color:orange;}
+.gray{color: gray;}
+.red{color: red;}
+.blue{color: blue;}
+.aqua{color:aqua;}
+.black{color:rgb(23, 23, 23);}
+.whiteSmoke{color: whitesmoke;}
+
+
+
+.bgGreen{background-color: green;}
+.bgYellow{background-color: yellow;}
+.bgBrown{background-color: brown;}
+.bgPink{background-color: pink;}
+.bgOrange{background-color:orange;}
+.bgGray{background-color: gray;}
+.bgRed{background-color: red;}
+.bgBlue{background-color: blue;}
+.bgAqua{background-color:aqua;}
+.bgBlack{background-color: rgb(23, 23, 23);}
+
+.cabecalho span{
+    font-size: 28px;
+}
+
+.cabecalho i{
+    font-size: 40px;
+}
+
+.container_iniciar_jogo{
+    display: flex;
+    justify-content:space-between;
+    padding: 25px;
+    width: 100%;
+    height: 20%;
+    background-color: rgb(33, 37, 41);
+    border-radius: 5px;
+}
+
+.container{
+    height: 75vh;
+}
+
+#btnIniciarJogo{
+    text-transform: uppercase;
+}
+
+.container_jogo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 75%;
+    border-radius: 5px;
+    border: solid lightgray 1px;
+    background-color: whitesmoke;
+}
+
+.lblNivel, .timer, .lblPontuacao{
+    font-size: 28px;
+}
+
+
+.palavra_alvo{
+    text-transform: uppercase;
+}
+
+.container_principal{
+    display: grid;
+    justify-content: center;
+    height: 300px;
+    margin-right: 150px;
+}
+
+.container_secundario{
+    display: grid;
+    position: relative;
+    gap: 20px;
+}
+
+.container_quadrados{
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+}
+
+
+.quadrado{
+    border-radius: 5%;
+}
+
+.quadrado:hover{
+    cursor: pointer;
+    filter: brightness(200%);
+    filter: contrast(140%);
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+
+#toast_principal{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}

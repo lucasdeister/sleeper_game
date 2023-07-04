@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans';
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+	'header header header header header header'
+	'main main main main main'
+	'footer footer footer footer footer footer';
+}
+
+.cabecalho{
+    padding-top: 15px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(42, 41, 41);
+    border-bottom: solid steelblue 4px;
+    margin-bottom: 10px;
+}
+
+
+.container-rodape{
+    font-size: 17px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: black;
+    background-color: steelblue;
+}
+
+
+.icones{
+    margin-left: 5px;
+    color: black;
+}
+
+.insta{
+    font-size: 25px;
+}
+
+.email{
+    font-size: 30px;
+}
+
+hr{
+    margin: 1em 0;
+    border: solid lightgray 2px;
+    background-color: lightgray;
+    margin-top: 15px;
+}
+
+.grid-container main{
+  text-align: center;
+}
+
+.green{color: green;}
+.yellow{color: yellow;}
+.brown{color: brown;}
+.pink{color: pink;}
+.orange{color:orange;}
+.gray{color: gray;}
+.red{color: red;}
+.blue{color: blue;}
+.aqua{color:aqua;}
+.whiteSmoke{color: whitesmoke;}
+
+.apresentacao{
+    padding: 150px;
+    height: 650px;
+    -webkit-box-shadow: 0px -1px 54px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -1px 54px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px -1px 54px -10px rgba(0,0,0,0.75);
+}
+
+
+.cabecalho span{
+    font-size: 28px;
+}
+
+
+.cabecalho i{
+    font-size: 40px;
+}
